@@ -1,2 +1,2 @@
-# altsh.github.io
-ALTernative to previous cheat SHeets. (ALTSH)
+# altwiz.github.io
+pvt cheatsheet
