@@ -1,6 +1,8 @@
-p {
-  color: #f00;
+body {
+  background: #202228;
+  color: #fff;
 }
-h1 {
+#site-title {
   font-family: 'Signika Negative', sans-serif;
+  color: #8377d1;
 }
