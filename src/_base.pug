@@ -3,15 +3,18 @@ include _env.pug
 html(lang="en")
   head
     meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     block title
     block styles
-      // web font
-      .
+      . 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
-      link(rel='stylesheet', href=`${base_url}/style/main.css`)
+      link(rel='stylesheet' href=`${base_url}/style/main.css`)
   body
     block content 
+    block scripts 
+      . 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      script(src=`${base_url}/script/main.js`)
