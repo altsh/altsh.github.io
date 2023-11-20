@@ -1,17 +1,27 @@
-extends _base.pug
-
-block title
-  title #{site_name}
-
-block content
-  main: section
-    p
-      | Lorem ipsum dolor sit amet, consectetur adipisci elit, 
-      | sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
-      | Ut enim ad minim veniam, quis nostrum exercitationem ullam 
-      | corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. 
-      | Quis aute iure reprehenderit in voluptate velit esse 
-      | cillum dolore eu fugiat nulla pariatur. 
-      | Excepteur sint obcaecat cupiditat non proident, 
-      | sunt in culpa qui officia deserunt mollit anim id est laborum.
+doctype html
+html(lang='ja')
+  head
+    meta(charset='UTF-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com' crossorigin)
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&family=Zen+Kaku+Gothic+New&family=Roboto+Mono')
+    link(rel='stylesheet', href='https://unpkg.com/terminal.css/dist/terminal.min.css')
+    link(rel='stylesheet', href='/style.css')
+    title AltWiz
+  body.terminal
+    header.container
+      .terminal-nav
+        .terminal-logo: .terminal-prompt
+          a(href="/index.html") AltWiz
+        nav.terminal-menu
+          ul
+    main.container
+      h2 Hello World
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      p
+        | 日本語の文字列。幅確認<br>
+        | english text... check width
+    footer.container
+      p here fotter area
 
